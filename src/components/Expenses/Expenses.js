@@ -14,8 +14,11 @@ const Expenses = (props) => {
   return (
     <Card className="expenses">
       <ExpensesFilter selected={selectdYear}  onChangeSelectedYearHandler={changeSelectedYearHandler} />
+      <div class="card-flex">
       {props.items.map ( (item , index) => <ExpenseItem key={index} title={item.title}   amount={item.amount}  date={item.date} /> ) }
+    </div>
     </Card>
+    
   );
 }
 

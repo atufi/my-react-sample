@@ -27,8 +27,8 @@ const initExpenses = [
 const App = () => {
   const [expenses,setExpenses] = useState(initExpenses);
   const addNewExpensehandler = (newData) => {
-    console.log(newData);
-    setExpenses ( prv => { return [newData , ...prv] } ) ;
+    //console.log(newData);
+    setExpenses ( prv =>   [newData , ...prv]  ) ;
   }
   // return React.createElement(
   //   'div',
