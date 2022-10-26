@@ -17,11 +17,10 @@ const Expenses = (props) => {
     <li >
       <Card className="expenses">
       <ExpensesFilter selected={selectdYear}  onChangeSelectedYearHandler={changeSelectedYearHandler} />
-      <div class="card-flex">
+      
       <ExpensesList items={filteredItems} />
       
-    </div>
-    </Card>
+       </Card>
     </li>
   );
 }

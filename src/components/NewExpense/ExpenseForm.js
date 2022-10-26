@@ -19,6 +19,7 @@ export default function ExpenseForm (props) {
         //console.log (userInputs);
         props.onSaveDataHandler(userInputs);
         setUserInputs(initUserInputs);
+        props.onCancelIsEditingHandler();
 
     }
 return (
@@ -38,6 +39,7 @@ return (
             </div>
             <div className='new-expense__actions' >
                 <button type='submit'>Add Expense</button>
+                <button type='button' onClick={props.onCancelIsEditingHandler}>Cancel</button>
             </div>
         </div>
     </form>
